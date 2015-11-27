@@ -1,0 +1,41 @@
+nav {
+    color: #fff;
+    background-color: #26A69A !important;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #F1F1F1 !important;
+}
+
+i.right {
+    float: right !important;
+    margin-left: 0% !important;
+    margin-top: 16% !important;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+    font-size: 16px;
+    color: #26a69a;
+    display: block;
+    line-height: 25px !important;
+    padding: 15px 8px !important;
+}
+
+nav ul li {
+    width: 120px;
+}
+td, th {
+    padding: 8px 5px !important;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+select{
+    display: inline;
+  }

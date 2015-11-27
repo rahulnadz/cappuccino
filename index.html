@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>project</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <div>
+        <ul id='ddcust' class='dropdown-content'>
+            <li><a href="addcust.html">add customer</a></li>
+            <li><a href="index.html">view customer</a></li>
+        </ul>
+        <ul id='ddreport' class='dropdown-content'>
+            <li><a href="#!">payment</a></li>
+            <li><a href="#!">STB report</a></li>
+            <li><a href="#!">customer</a></li>
+        </ul>
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">add customer</a></li>
+            <li><a href="#!">view customer</a></li>
+        </ul>
+        <nav>
+            <ul class="right hide-on-med-and-down">
+                <li><a class='dropdown-button' href='#' data-activates='ddcust'>customer</a></li>
+                <li><a href="">payment</a></li>
+                <li><a class='dropdown-button' href='#' data-activates='ddreport'>report</a></li>
+                <li><a href="">utilities</a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav">
+                <li></li>
+                <li><a href="">customer</a></li>
+                <li><a href="">customer</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </nav>
+    </div>
+    <section>
+        <div>
+            <h1>
+        LIST OF CUSTOMER</h1>
+        </div>
+        <div class="row">
+            <form>
+            <div class="input-field col s3">
+                <input type="search" id="search-field" class="field" required maxlength="">
+                <label for="search-field"><i class="mdi-action-search"></i></label>
+                <i class="mdi-navigation-close close"></i>
+            </div>
+            </form>
+        </div>
+        <div>
+            <table class="highlight bordered centered">
+                <thead>
+                    <tr>
+                        <th data-field="id">NAME</th>
+                        <th data-field="name">VC NUMBER</th>
+                        <th data-field="name">CONTACT</th>
+                        <th data-field="name">ADDRESS</th>
+                        <th data-field="price">STATUS</th>
+                        <th data-field="price">LCO CODE</th>
+                        <th data-field="price">BALANCE</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Alvin</td>
+                        <td>00001526448</td>
+                        <td>8425013713</td>
+                        <td>3/211 om sai ganesh</td>
+                        <td>ACTIVE</td>
+                        <td>MB 007</td>
+                        <td>0</td>
+                        <td>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">EDIT</button>
+                        </td>
+                        <td>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">VIEW</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alan</td>
+                        <td>00001585448</td>
+                        <td>8898681534</td>
+                        <td>amrapali</td>
+                        <td>INACTIVE</td>
+                        <td>MB 007</td>
+                        <td>200</td>
+                        <td>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">EDIT</button>
+                        </td>
+                        <td>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">VIEW</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jonathan</td>
+                        <td>00001526441</td>
+                        <td>7208681534</td>
+                        <td>priyadashani</td>
+                        <td>TRANSFER</td>
+                        <td>MB 598</td>
+                        <td>500</td>
+                        <td>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">EDIT</button>
+                        </td>
+                        <td>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">VIEW</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <footer>
+    </footer>
+
+    <!--script-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
