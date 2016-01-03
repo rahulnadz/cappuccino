@@ -21,6 +21,18 @@
          }
          return $query;
      }
+     
+      public function paymentreport()
+      {
+          $query = $this->db->query("SELECT SUM(`amount`) AS `total collection` FROM `payment`")->row();
+          return $query;
+      }
+     
+     public function paymentreportbyid($id)
+      {
+          $query = $this->db->query("SELECT `amount`, `date` FROM `payment` WHERE `cid` = '$id'")->result();
+          return $query;
+      }
  } 
  
  ?>

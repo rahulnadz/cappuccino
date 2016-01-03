@@ -26,4 +26,17 @@
  	 	$this->load->view('json', $message);
  	 
      }
+     
+     public function paymentreport()
+     {
+        $message['json'] = $this->model->paymentreport();
+ 	 	$this->load->view('json', $message);
+     }
+     
+     public function paymentreportbyid()
+     {
+           $id = $this->input->get('id');
+ 	 	$message['json'] = $this->model->paymentreport($id);
+ 	 	$this->load->view('json', $message);
+     }
  }
